@@ -2,9 +2,11 @@
 ** This is the HTTP server for the application
 **/
 var http = require('http');
-var server = http.createServer();
-server.on('request', function(request, response) {
-	console.log("received a "+request.method+" request, on:"+request.url);
+var express = require('express');
+var app = express();
+app.get("/", function(req, res) {
+	res.send("Hello world!");
 });
-server.listen(8000);
-console.log("server running.");
+app.listen(3000, function() {
+	console.log("app listening on 3000!");
+});
