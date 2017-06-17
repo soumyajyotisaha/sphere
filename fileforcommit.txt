@@ -1,1 +1,0 @@
-This file contains some filler data, to make me able to create the first ever commit of this repository. Good luck.
